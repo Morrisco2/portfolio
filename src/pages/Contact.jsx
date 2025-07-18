@@ -28,7 +28,7 @@ const Contact = () => {
 
     const sendData = async () => {
       try {
-        const res = await fetch("/api/sendEmail", {
+        const res = await fetch("../../api/sendEmail", {
           method: "POST",
           headers: {
             "content-Type": "application/json"
