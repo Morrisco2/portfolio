@@ -18,7 +18,6 @@ const Contact = () => {
     e.preventDefault();
     setStatus("sending");
     setResponesMSG("sending...")
-    console.log(formData);
     
     setSubmitted(true);
   }
@@ -28,7 +27,7 @@ const Contact = () => {
 
     const sendData = async () => {
       try {
-        const res = await fetch("../../api/sendEmail", {
+        const res = await fetch("https://portfolio-backend-gznw.onrender.com", {
           method: "POST",
           headers: {
             "content-Type": "application/json"
@@ -42,6 +41,8 @@ const Contact = () => {
           setStatus("sent")
           setResponesMSG("email sent successfully");
           setFormData({ name: "", email: "", message: "" })
+          console.log(respones.status);
+          
         } else {
           setStatus("failed")
           setResponesMSG("Failed to send email! try again")
