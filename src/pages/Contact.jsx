@@ -28,7 +28,7 @@ const Contact = () => {
 
     const sendData = async () => {
       try {
-        const res = await fetch("https://portfolio-fdx7-nvd6abzet-morriscotechs-projects.vercel.app/api/sendEmail", {
+        const res = await fetch("https://portfolio-xwrn.vercel.app/api/sendEmail", {
           method: "POST",
           headers: {
             "content-Type": "application/json"
