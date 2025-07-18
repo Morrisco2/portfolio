@@ -1,0 +1,6 @@
+Primary	--- Royal Purple--	#6D28D9
+Secondary	---Hot Pink--	#EC4899
+Background	---White--	#FFFFFF
+Accent	---Lavender Light--	#F3E8FF
+Text (Dark)	---Gunmetal Gray--	#1E1E2F
+Hover/CTA	---Soft Purple Glow--	#C084FC

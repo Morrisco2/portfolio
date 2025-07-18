@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #360047;
+}
+.cvContainer .cv{
+  background-color: #360047;
+  color: #ffffff;
+}
+
+.cvContainer .cv:hover{
+  background-color: #360047;
+  color: #ffffff;
+}
+
+.navbar li {
+  border-bottom: 2px solid transparent;
+}
+
+.navbar li:hover {
+  border-bottom: 2px solid #ff0080;
+  transition: 1s ease;
+}
+
+
+
+.contactBtn a {
+  color: #74009a;
+}
+
+
+.contactBtn a:hover {
+  background-color: #ce9cff;
+  transition: 0.7s ease;
+  color: #ffffff;
+}
+
+
+/* scroll effect */
+
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.7s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* home */
+
+.home {
+  overflow: hidden;
+  min-height: 30vh;
+}
+
+.fullStack {
+  background-image: linear-gradient(200deg, #400055, #23002f);
+  color: white;
+  padding: 10px 20px;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@keyframes typing {
+  from {
+    width: 0;
+    border-color: white
+  }
+
+  to {
+    width: 100%;
+    border-color: white
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #360047;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+  font-family: monospace;
+  display: inline-block;
+  animation-delay: 2s;
+}
+
+/* Re-trigger every 10s */
+.fullStack {
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+
+.myName {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  color: #360047;
+  font-size: 6em;
+
+
+}
+
+.myImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.myImage>img {
+  height: 90vh;
+  width: fit-content;
+
+}
+
+.name .btn {
+  background-color: #EC4899;
+  color: white;
+}
+
+.name .btn:hover {
+  background-color: #C084FC;
+  color: rgb(255, 255, 255);
+  transition: .8s ease;
+}
+
+
+
+/* ABOUT ME SECTION */
+.aboutMe {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(120deg, black, rgb(40, 0, 40));
+}
+
+.aboutMe h1 {
+  color: #ce9cff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.aboutDivs {
+  height: 90vh;
+  width: inherit;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  padding: 10px 20px;
+}
+
+
+.aboutImageContainer {
+  display: grid;
+  grid-template-rows: 10fr 1fr 1fr;
+}
+
+.aboutImage {
+  background-image: url("../public/assets/myImage.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutImage:hover {
+  transform: rotateX(30deg);
+  transform: rotateY(50deg);
+  transition: 1s ease;
+
+}
+
+.aboutText {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-gap: 5px;
+}
+
+
+
+.aboutArrow {
+  display: flex;
+  align-items: center;
+}
+
+.aboutP {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 20px;
+
+}
+
+.aboutP>p {
+  padding-left: 20px;
+  max-width: 700px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.contactBtn2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.75rem 1.5rem;
+  background-color: #EC4899;
+  color: #360047;
+  border: 2px solid #360047;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 0.4s ease;
+  font-weight: bold;
+
+}
+
+.contactBtn2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #360047;
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.contactBtn2:hover::before {
+  left: 0;
+}
+
+.contactBtn2:hover {
+  color: #fff;
+}
+
+.skill {
+  background-color: black;
+}
+
+
+/* PROJECTS */
+/* container styles as before */
+.projects-section {
+  background: #000;
+}
+
+.projects-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at bottom right, rgba(130, 5, 255, 0.4), transparent 100%);
+  pointer-events: none;
+}
+
+/* Media wrapper */
+.project-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+/* Thumbnail always visible underneath */
+.project-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video sits atop, hidden by default */
+.project-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* On hover, fade video in */
+.project-media:hover .project-video {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+  .myImage>img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .aboutDivs {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 170vh;
+
+  }
+
+  .aboutImageContainer {
+    min-height: 300px;
+  }
+
+  .myName {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .fullStack {
+    font-size: 16px;
+
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  .typewriter {
+    font-size: 1.2rem;
+  }
+}

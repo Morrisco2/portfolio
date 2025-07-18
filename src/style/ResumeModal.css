@@ -1,0 +1,68 @@
+/* ResumeModal.css */
+
+/* Full-screen dark overlay */
+.resume-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 60px; /* offset for navbar height */
+}
+
+/* Modal container */
+.resume-modal {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Content wrapper */
+.modal-content {
+  padding: 2rem;
+}
+
+/* Download button */
+.download-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #EC4899;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #C084FC;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .resume-modal {
+    width: 95%;
+    height: calc(100vh - 60px);
+  }
+  .modal-content {
+    padding: 1rem;
+  }
+}

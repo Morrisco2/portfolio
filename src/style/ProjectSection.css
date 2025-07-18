@@ -1,0 +1,26 @@
+.projects-section {
+  background: #000;  /* or your dark gradient */
+}
+
+/* Optional: add a subtle gradient overlay */
+.projects-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at bottom right, rgba(100,0,200,.4), transparent 70%);
+  pointer-events: none;
+}
+
+/* Give the image a nice card-like look */
+.project-img-wrapper {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
+}
+
+/* Adjust project-row spacing on smaller screens */
+@media (max-width: 767px) {
+  .project-row {
+    text-align: center !important;
+  }
+}

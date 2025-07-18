@@ -1,0 +1,138 @@
+.formContainer {
+    background-image: url("../../public/assets/html-code-on-computer-monitor-software-web-developer-programming-code-photo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.glass-form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: pink;
+}
+
+form {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.submitContact {
+    background-color: #EC4899;
+}
+
+.submitContact:hover {
+    background-color: #C084FC;
+}
+
+.form-controlcss {
+    width: 350px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid pink;
+    color: rgb(224, 224, 224);
+    margin-top: 10px;
+    border-top-right-radius: 5px;
+
+}
+
+.form-controlcss:focus {
+    transition: .5s ease;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: rgb(224, 224, 224);
+
+
+}
+
+
+.form-control::placeholder {
+    color: rgb(123, 123, 123);
+}
+
+.contactInfo {
+    background-color: rgb(42, 1, 42);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+}
+
+.contactInfo h1 {
+    border-bottom: 2px solid pink;
+}
+
+.info {
+    color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 3px solid pink;
+}
+
+.icon {
+    color: #EC4899;
+}
+
+
+/* status alert */
+
+.messageAlert {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  margin-top: 15px;
+  min-height: 40px;
+}
+
+/* Status-based backgrounds */
+.messageAlert.sending {
+  background-color: #ffc107; /* warning */
+    color: rgb(0, 0, 0);
+
+}
+
+.messageAlert.sent {
+  background-color: #28a745; /* success */
+}
+
+.messageAlert.failed {
+  background-color: #dc3545; /* danger */
+}
+
+
+
+
+/* Responsive spacing */
+@media (min-width: 768px) {
+    .glass-form {
+        padding: 1.5rem;
+    }
+
+}
+
+@media (max-width: 475px) {
+
+    .info h4 {
+        font-size: 10px;
+
+    
+    }
+     .glass-form {
+    padding: 1rem;
+  }
+
+  .form-controlcss {
+    font-size: 0.9rem;
+     width: 100%;
+  }
+
+  .submitContact {
+    width: 100%;
+  }
+}
