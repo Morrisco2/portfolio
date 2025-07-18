@@ -27,7 +27,7 @@ const Contact = () => {
 
     const sendData = async () => {
       try {
-        const res = await fetch("https://portfolio-backend-gznw.onrender.com", {
+        const res = await fetch("https://portfolio-backend-gznw.onrender.com/sendEmail", {
           method: "POST",
           headers: {
             "content-Type": "application/json"
