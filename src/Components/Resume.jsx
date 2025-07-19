@@ -108,7 +108,7 @@ export default function Resume() {
                         <b>Independent Projects & Client Work</b><br />
                         <ul>
                             <li>
-                                <b>CPN Program Website:</b> After demonstrating initiative, was entrusted to design, build, and deploy the program’s public site end‑to‑end.
+                                <b>CPN Program center Website:</b> After demonstrating initiative, was entrusted to design, build, and deploy the program’s center public site end‑to‑end.
 
                             </li>
                             <li>
@@ -125,10 +125,10 @@ export default function Resume() {
                     <h2>Selected Projects</h2>
                     <div className="project-list">
                         <div className="cpn">
-                            <b>CPN Center Website</b><br />
+                            <b>CPN program Center Website</b><br />
                             <i>Full-Stack Developer (Internship Project)</i>
                             <p><b>Tech Stack:</b> HTML, CSS,Bootstrap JavaScript, Node js, PostgreSQL</p>
-                            <a href="" target='_blank' style={{ textDecoration: "none" }}>Adele Empowerment Foundation</a>
+                            <a href="https://adeleempowermentfoundation.org/" target='_blank' style={{ textDecoration: "none" }}>Adele Empowerment Foundation</a>
                             <ul>
                                 <li>
                                     Developed and deployed the official website for the organization as part of the CPN certification program.

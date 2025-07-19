@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 const projects = [
   {
-    title: "Adele Empowerment Foundation CPN branch",
+    title: "Adele Empowerment Foundation ",
     date: "May 2025",
     thumb: "/assets/project1-thumb.png",
     videoSrc: "/assets/project1.mp4",
+    link: "View site",
+    href: "https://adeleempowermentfoundation.org/"
   },
   {
     title: "Automated Course allocation System",
@@ -87,6 +89,7 @@ export default function ProjectsSection() {
               >
                 <h3 className="h2">{p.title}</h3>
                 <p className="" style={{color:"grey", fontWeight:"600"}}>{p.date}</p>
+                <a className="" href={p.href} target="_blank" style={{color:"pink", fontWeight:"600"}}>{p.link}</a>
               </div>
             </div>
           );
