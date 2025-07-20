@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { href } from "react-router-dom";
 const projects = [
   {
     title: "Adele Empowerment Foundation ",
@@ -13,6 +14,8 @@ const projects = [
     date: "October 2024",
     thumb: "/assets/project2-thumb.png",
     videoSrc: "/assets/project2.mp4",
+    link: "",
+    href: ""
   },
   {
     title: "Queu MAnagement System",
