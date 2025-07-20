@@ -86,7 +86,7 @@ export default function Resume() {
 
                             </li>
                             <li>
-                                Built and deployed a full‑stack blog application as a capstone, integrating user authentication and CRUD operations.
+                                Built and deployed a Full‑stack blog application as a capstone, integrating user authentication and CRUD operations.
                             </li>
                         </ul>
 
