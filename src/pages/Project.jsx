@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { href } from "react-router-dom";
 const projects = [
   {
-    title: "Adele Empowerment Foundation ",
+    title: "Adele Empowerment Foundation (CPN program center)",
     date: "May 2025",
     thumb: "/assets/project1-thumb.png",
     videoSrc: "/assets/project1.mp4",
